@@ -1,3 +1,74 @@
+@media(prefers-color-scheme:light) {
+  :root {
+    --box1-bg-color: white;
+    --box2-bg-color: white;
+    --hotshot-heading-color: black;
+    --card-bg-color: rgb(226, 110, 226);
+    --heading-color: purple;
+    --sub-heading: black;
+    --input-bg: white;
+    --card-border-color: 1px solid black;
+    --login-btn-text: white;
+    --login-bg-color: purple;
+
+  }
+}
+
+@media(prefers-color-scheme:dark) {
+  :root {
+    --box1-bg-color: black;
+    --box2-bg-color: black;
+    --hotshot-heading-color: white;
+    --card-bg-color: black;
+    --heading-color: rgb(228, 158, 228);
+    --sub-heading: white;
+    --input-bg: white;
+    --card-border-color: 1px solid white;
+    --login-btn-text: black;
+    --login-bg-color: white;
+  }
+}
+
+.box1 {
+  background-color: var(--box1-bg-color);
+}
+
+.heading {
+  color: var(--heading-color);
+}
+
+.box2 {
+  background-color: var(--box2-bg-color);
+}
+
+.hotshot-heading {
+  color: var(--hotshot-heading-color);
+}
+
+.card-div {
+  background-color: var(--card-bg-color);
+  margin-top: 60px;
+  border: var(--card-border-color);
+  border-radius: 10px;
+}
+
+.sub-heading {
+  color: var(--sub-heading)
+}
+
+.input-bg {
+  background-color: var(--input-bg);
+}
+
+.login-btn {
+  color: var(--login-btn-text);
+  background-color: var(--login-bg-color);
+}
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -32,6 +103,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
